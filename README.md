@@ -18,3 +18,9 @@ Getting this system started is super easy, you just have to run the .sh file, th
 # Who Am I
 
 My name is Youssof, I've been programming in C for quite some time, almost 2-3 years. I'm a strong believer in understanding the basics first, then going to something else, such as python or java. How ever, I enjoy coding in C as it proposes challenges that I love to solve.
+
+# Contact Me
+
+If you ever want to suggest improvments, give feedback, etc. Feel free to contact me with the email below.
+
+```youssof.m.soliman@gmail.com```
