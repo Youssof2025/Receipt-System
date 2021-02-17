@@ -1,7 +1,7 @@
 #!/bin/sh
 clear
 gcc execute.c
-mv a.out Reciepts
-cd Reciepts
+mv a.out Receipts
+cd Receipts
 ./a.out
 rm a.out
