@@ -12,7 +12,7 @@ void delay2(int number_of_seconds) {
     while (clock() < start_time + milli_seconds);
 }
 
-//Writing the reciept
+//Writing the receipt
 void write_file() {
     FILE *fPtr;
     char account_name[DATA_SIZE];
@@ -21,7 +21,7 @@ void write_file() {
     while ((getchar()) != '\n');
 
     char file_suffix[] = ".txt";
-    strcat(account_name, file_suffix); //adding a '.txt' at the end of each file
+    strcat(account_name, file_suffix); //adding a '.txt' at the end of each receipt
     fPtr = fopen(account_name, "w");
 
     if (fPtr == NULL) {
@@ -33,10 +33,26 @@ void write_file() {
     s = time(NULL);
     current_time = localtime(&s);
 
-    char Store_name[DATA_SIZE];
+    char Store_name[DATA_SIZE]; //optional use
     char prefix_store[] = "\t";
     fputs(prefix_store, fPtr);
-    fputs("STORE NAME HERE", fPtr);
+    fputs("STORE NAME HERE\n", fPtr);
+
+    char Store_num[DATA_SIZE];
+    char prefix_store_num[] = "\t";
+    fputs(prefix_store_num, fPtr);
+    fputs("STORE NUMBER HERE", fPtr);
+
+    char items[DATA_SIZE];
+    int items_num;
+    items_num = (int)(items);
+    for (items_num = 0; items_num <= 5; items_num++) {
+        char what_items[DATA_SIZE];
+        char prefix_store_items[] = "\n";
+        scanf("%s", what_items);
+        fputs(prefix_store_items, fPtr);
+        fputs(what_items, fPtr);
+    }
 
     fclose(fPtr);
 
