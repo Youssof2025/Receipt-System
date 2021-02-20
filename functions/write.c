@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <ctype.h>
 
 #define DATA_SIZE 1000
 
@@ -45,7 +46,9 @@ void write_file() {
 
     char items[DATA_SIZE];
     int items_num;
+
     items_num = (int)(items);
+
     for (items_num = 0; items_num <= 5; items_num++) {
         char what_items[DATA_SIZE];
         char prefix_store_items[] = "\n";
